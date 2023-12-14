@@ -1,0 +1,101 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Parent/Guardian pairs</title>
+        <!--Set the viewport so the page adjusts according to the device-->
+        <meta name = "viewport" content= "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href="entities.css">
+    </head>
+    <body>
+        <hr>
+        <br>
+        <a href="stalphonsus_db.php">Return to Database main page</a>
+
+        <h1>Search for Parent Pairs and Family information</h1>
+        <form action="search_parent_pairs3.php" method="POST">
+            <p>
+                <label>Search Pair ID: <input type="text" name="Pair_ID" /></label>
+            </p>
+    
+            <p>
+                <label>Search Parent 1 ID: <input type="text" name="Parent1_ID" /></label>
+            </p>
+    
+            <p>
+                <label>Search Parent 2 ID: <input type="text" name="Parent2_ID" /></label>
+            </p>
+
+            <p>
+                <label>Search by Student ID: <input type="text" name="Student_ID" /></label>
+            </p>
+
+            <p>
+                <button type="submit" name="search">Search Family Records</button>
+            </p>
+        </form>
+
+        <!--No editing here because of foreign keys Parent IDs and Student IDs-->
+
+        <!--Insert new Pair ID-->
+        <h2>Insert New Pair ID</h2>
+        <form action="insert_pair_id2.php" method="POST">
+            <p>
+                <label>Insert Pair ID: <input type="text" name="Pair_ID" required/></label>
+            </p>
+
+            <p>                
+                <label>Input Parent 1 ID: <input type="text" name="Parent1_ID" /></label>             
+            </p>
+
+            <p>
+                <label>Input Parent 2 ID: <input type="text" name="Parent2_ID" /></label>
+            </p>
+
+            <p>
+                <label>Input by Student ID: <input type="text" name="Student_ID" /></label>
+            </p>
+
+            <p>
+                <button type="submit" name="insert">Insert Family</button>
+            </p>
+        </form>
+
+        <h3>Edit Pair ID information</h3>
+        <form action="edit_pair_id.php" method="POST">
+            <p>
+                <label>Pair ID: <input type="text" name="Pair_ID" required/></label>
+            </p>
+
+            <p>                
+                <label>Edit Parent 1 ID: <input type="text" name="Parent1_ID" /></label>             
+            </p>
+
+            <p>
+                <label>Edit Parent 2 ID: <input type="text" name="Parent2_ID" /></label>
+            </p>
+
+            <p>
+                <label>Edit by Student ID: <input type="text" name="Student_ID" /></label>
+            </p>
+
+            <p>
+                <button type="submit" name="insert">Edit Family information</button>
+            </p>
+        </form>
+
+        <h3>Delete Parent Pairs by ID</h3>
+        <form action="del_parent_pairs.php" method="POST">
+            <p>
+                <label>Enter Pair ID: <input type="text" name="Pair_ID" required/></label>
+            </p>
+
+            <p>
+                <button type="submit" name="search">Delete Family Records</button>
+            </p>
+        </form>
+
+        <br>
+        <a href="stalphonsus_db.php">Return to Database main page</a>
+        </body>
+    </body>
+</html>

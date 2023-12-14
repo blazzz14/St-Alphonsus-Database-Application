@@ -1,0 +1,43 @@
+body {
+    text-align: center; /* Center the content */
+}
+
+h1 {
+    color: #333; /* Set the colour of the heading */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: #007bff; /* Blue color for the buttons */
+    color: #fff; /* Text color for the buttons */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+h2 {
+    margin-top: 20px; /* Add margin to the top of the h2 element */
+}
+
+a {
+    color: #007bff; /* Set the color of the links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

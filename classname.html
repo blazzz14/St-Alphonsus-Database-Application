@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Classes</title>
+        <!--Set the viewport so the page adjusts according to the device-->
+        <meta name = "viewport" content= "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href="entities.css">        
+    </head>
+
+    <hr>
+    <br>
+    <a href="stalphonsus_db.php">Return to Database main page</a>
+    <body>
+        <h1>View Class Information, Reception to Year 6</h1>
+        <form name="classForm3" action="class_view2.php" method = "GET">
+            <select name="class_name">
+                <option value= "RR">Reception</option>
+                <option value= "YR1">Year 1</option>
+                <option value= "YR2">Year 2</option>
+                <option value= "YR3">Year 3</option>
+                <option value= "YR4">Year 4</option>
+                <option value= "YR5">Year 5</option>
+                <option value= "YR6">Year 6</option>
+            </select>
+            <input type="submit" value="Select Class" />
+        </form>
+        
+        <!--To be completed: Viewing relational data. Having problems with primary and foreign keys-->
+        <h2>View Students by class</h2>
+        <form action ="student_view_inclass.php" method = "GET">
+            <p>
+                <label>Search by Class name: <input type="text" name="class_name"required /></label>
+            </p>
+
+            <p>
+                <label>Search by Teacher ID: <input type="text" name="teacher_id" /></label>
+            </p>
+
+            <p>
+                <label>Search by TA ID: <input type="text" name="ta_id" /></label>
+            </p>
+            
+            <p>
+                <button type="submit" name="search">Search</button>
+            </p>
+        </form>
+
+        <h3>Edit Class information</h3>  
+        <form action="edit_class2.php" method="POST">
+            <ul>
+                <li>
+                    <label for="class_name"> Class ID:</label>
+                    <input type="text" name="class_name" required>
+                </li>
+
+                <li>
+                    <label for="teacher_id"> Teacher ID:</label>
+                    <input type="text" name="teacher_id">
+                </li>
+
+                <li>
+                    <label for="ta_id"> Teaching Assistant ID:</label>
+                    <input type="text" name="ta_id">
+                </li>                            
+            </ul>
+            <input type="submit" value="Update Class information">
+        </form>
+
+        <!--No code to delete class information because it's not needed. School will always have 7 classes-->
+        <hr>
+        
+        <!--
+            Removed <script src="classname.js"></script> as function could not locate form. Used required inside tags instead.
+            To review flawed logic. Meanwhile use required inside tags instead
+        -->
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+    <!--Set the viewport so the page adjusts according to the device-->
+    <meta name = "viewport" content= "width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href="entities.css">
+</head>
+<body>
+    <hr>
+    <br>
+    <a href="stalphonsus_db.php">Return to Database main page</a>
+    <h1>Student/Pupil Information</h1>
+
+    <h2>Search for Students by attributes</h2>
+    <form action="students_search3.php" method="POST">
+        <p>
+            <label>Search Student ID: <input type="text" name="student_id" /></label>
+        </p>
+
+        <p>
+            <label>Search by First Name: <input type="text" name="first_name" /></label>
+        </p>
+
+        <p>
+            <label>Search by Last Name: <input type="text" name="last_name" /></label>
+        </p>
+
+        <p>
+            <label>Search by Teacher ID: <input type="text" name="teacher_id" /></label>
+        </p>
+
+        <p>
+            <label>Search by TA ID: <input type="text" name="ta_id" /></label>
+        </p>
+
+        <p>
+            <label>Search by Class name: <input type="text" name="class_name" /></label>
+        </p>
+
+        <p>
+            <label>Search by Parent ID: <input type="text" name="parent_id" /></label>
+        </p>
+
+        <p>
+            <button type="submit" name="search">Search</button>
+        </p>
+    </form>
+
+    <h3>Edit Student Information in school database</h3>
+    <form action="students_edit2.php" method="POST">
+        <p>
+            <label>Student ID: <input type="text" name="student_id" required/></label>
+        </p>
+
+        <p>
+            <label>First Name: <input type="text" name="first_name" /></label>
+        </p>
+
+        <p>
+            <label>Last Name: <input type="text" name="last_name" /></label>
+        </p>
+
+        <p>
+            <label>Teacher ID: <input type="text" name="teacher_id" /></label>
+        </p>
+
+        <p>
+            <label>Teaching Assistant ID: <input type="text" name="ta_id" /></label>
+        </p>
+
+        <p>
+            <label>Class name: <input type="text" name="class_name" /></label>
+        </p>
+
+        <p>
+            <label>Parent ID: <input type="text" name="parent_id" /></label>
+        </p>
+
+        <p>
+            <button type="submit" name="search">Update Student</button>
+        </p>
+    </form>
+    <br>
+
+    <h4>Insert a new Student</h4>
+    <form action="insert_student2.php" method="POST">
+        <p>
+            <label>Student ID: <input type="text" name="Student_Id" required/></label>
+        </p>
+
+        <p>
+            <label>First Name: <input type="text" name="First_Name" /></label>
+        </p>
+
+        <p>
+            <label>Last Name: <input type="text" name="Last_Name" /></label>
+        </p>
+
+        <p>
+            <label>Teacher ID: <input type="text" name="Teacher_ID" /></label>
+        </p>
+
+        <p>
+            <label>Teaching Assistant ID: <input type="text" name="Teaching_Assistant_ID" /></label>
+        </p>
+
+        <p>
+            <label>Class name: <input type="text" name="Class_name" /></label>
+        </p>
+
+        <p>
+            <label>Parent ID: <input type="text" name="Parent_ID" /></label>
+        </p>
+
+        <p>
+            <button type="submit" name="insert">Insert Student</button>
+        </p>
+    </form>
+
+    <h5>Delete student records</h5>
+    <form action="del_student.php" method="POST">
+        <p>
+            <label>Enter Student ID: <input type="text" name="Student_Id" required/></label>
+        </p>
+
+        <p>
+            <button type="submit" name="search">Delete Student Records</button>
+        </p>
+    </form>
+
+
+    <hr>
+    <br>
+    <a href="stalphonsus_db.php">Return to Database main page</a>
+</body>
+</html>

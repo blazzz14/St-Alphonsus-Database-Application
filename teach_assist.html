@@ -1,0 +1,160 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Teaching Assistant Information</title>
+        <!--Set the viewport so the page adjusts according to the device-->
+        <meta name = "viewport" content= "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href="entities.css">
+    </head>
+
+    <hr>
+    <br>
+    <a href="stalphonsus_db.php">Return to Database main page</a>
+    
+    <h1>Teacher Assistant Information</h1>
+
+    <body>
+        <h2>View Teaching Assistant Information</h2>
+        <form action="teach_assist_view2.php" method = "GET">
+            <select name="TA_ID">
+                <option value= "TRAWRR">Reception TA</option>
+                <option value= "SARCRR">Reception 2ndTA</option>
+                <option value= "STECYR1">Year 1 TA</option>
+                <option value= "EMIWYR1">Year 1 2ndTA</option>
+                <option value= "SIMTYR2">Year 2 TA</option>
+                <option value= "YVOSYR2">Year 2 2ndTA</option>
+                <option value= "KATAYR3">Year 3 TA</option>
+                <option value= "UNAUYR3">Year 3 2ndTA</option>
+                <option value= "BERSYR4">Year 4 TA</option>
+                <option value= "WENBYR4">Year 4 2ndTA</option>
+                <option value= "AMYTYR5">Year 5 TA</option>
+                <option value= "RICKYR5">Year 5 2ndTA</option>
+                <option value= "WARCYR6">Year 6 TA</option>
+                <option value= "THOEYR6">Year 6 2ndTA</option>
+            </select>
+            <input type="submit" value="Select TA" />
+        </form> 
+
+        <!--create a form to edit the TA Information-->
+        <h3>Edit Teaching Assistant information</h3>
+        <form action="edit_ta2.php" method="POST">
+            <ul>
+                <li>
+                    <label for="ta_id"> Teaching Assist ID:</label>
+                    <input type="text" name="ta_id" required>
+                </li>
+
+                <li>
+                    <label for="teacher_id"> Teacher ID:</label>
+                    <input type="text" name="teacher_id">
+                </li>
+
+                <li>
+                    <label for="class_id"> Class ID:</label>
+                    <input type="text" name="class_id">
+                </li>
+
+                <li>
+                    <label for="first_name"> First Name:</label>
+                    <input type="text" name="first_name">
+                </li>
+
+                <li>
+                    <label for="last_name"> Last Name:</label>
+                    <input type="text" name="last_name">
+                </li>
+
+                <li>
+                    <label for="address"> Address:</label>
+                    <input type="text" name="address">
+                </li>
+
+                <li>
+                    <label for="phone_number"> Phone number:</label>
+                    <input type="tel" name="phone_number">
+                </li>
+
+                <li>
+                    <label for="annual_salary"> Annual salary:</label>
+                    <input type="number" name="annual_salary">
+                </li>
+
+                <li>
+                    <label for="background_check"> Background check:</label>
+                    <input type="text" name="background_check">
+                </li>
+            </ul>
+            <input type="submit" value="Update Teaching Assist">
+        </form>
+
+        <br>
+
+        <!--create a form to insert new information-->
+        <h4>Insert a New Teaching Assistant</h4>
+        <form action="insert_ta2.php" method="POST">
+            <ul>
+                <li>
+                    <label for="ta_id"> Teaching Assist ID:</label>
+                    <input type="text" name="ta_id" required>
+                </li>
+
+                <li>
+                    <label for="teacher_id"> Teacher ID:</label>
+                    <input type="text" name="teacher_id">
+                </li>
+
+                <li>
+                    <label for="class_id"> Class ID:</label>
+                    <input type="text" name="class_id">            
+                </li>
+
+                <li>
+                    <label for="first_name"> First Name:</label>
+                    <input type="text" name="first_name">
+                </li>
+
+                <li>
+                    <label for="last_name"> Last Name:</label>
+                    <input type="text" name="last_name">
+                </li>
+
+                <li>
+                    <label for="address"> Address:</label>
+                    <input type="text" name="address">
+                </li>
+
+                <li>
+                    <label for="phone_number"> Phone number:</label>
+                    <input type="tel" name="phone_number">
+                </li>
+
+                <li>
+                    <label for="annual_salary"> Annual salary:</label>
+                    <input type="number" name="annual_salary">                    
+                </li>
+
+                <li>
+                    <label for="background_check"> Background check:</label>
+                    <input type="text" name="background_check">
+                </li>
+            </ul>
+            <input type="submit" value="Insert TA">
+        </form>
+
+        <h5>Delete Teaching Assistant</h5>
+        <form action="del_ta.php" method="POST">
+            <p>
+                <label>Enter TA ID: <input type="text" name="ta_id" required/></label>
+            </p>
+    
+            <p>
+                <button type="submit" name="search">Delete TA Records</button>
+            </p>
+        </form>
+
+        <hr>
+        <br>
+        <a href="stalphonsus_db.php">Return to Database main page</a>
+
+    </body>
+</html>

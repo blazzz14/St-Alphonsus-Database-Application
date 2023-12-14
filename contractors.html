@@ -1,0 +1,112 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Contractors</title>
+        <!--Set the viewport so the page adjusts according to the device-->
+        <meta name = "viewport" content= "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href="entities.css">
+    </head>
+
+    <hr>
+        <br>
+        <a href="stalphonsus_db.php">Return to Database main page</a>
+    
+    <h1>Contractor Internal and External</h1>
+
+    <body>
+        <h2>Search for Contractor Information</h2>
+        <form action="search_contractor2.php" method="POST">
+            <p>
+                <label>Search by Contractor ID: <input type="text" name="Contractor_ID" required/></label>
+            </p>
+    
+            <p>
+                <label>Search by First Name: <input type="text" name="first_name" /></label>
+            </p>
+    
+            <p>
+                <label>Search by Last Name: <input type="text" name="last_name" /></label>
+            </p>
+    
+            <p>
+                <label>Search by Sector: <input type="text" name="Sector" /></label>
+            </p>
+    
+            <p>
+                <button type="submit" name="search">Search Contractor</button>
+            </p>
+        </form>
+
+        <!--create a form to edit the contractor Information-->
+        <h3>Edit Contractor information</h3>
+        <form action="edit_contractor2.php" method="POST">
+            <ul>
+                <li>
+                    <label for="Contractor_ID">Contactor_ID:</label>
+                    <input type="text" name="Contractor_ID" required>
+                </li>
+
+                <li>
+                    <label for="first_name"> First Name:</label>
+                    <input type="text" name="first_name">
+                </li>
+
+                <li>
+                    <label for="last_name"> Last Name:</label>
+                    <input type="text" name="last_name">
+                </li>
+
+                <li>
+                    <label for="Sector"> Sector:</label>
+                    <input type="text" name="Sector">
+                </li>
+            </ul>
+            <input type="submit" value="Update Contractor">
+        </form>
+
+        <br>
+
+        <!--create a form to insert new information-->
+        <h3>Insert New Contractor</h3>
+        <form action="insert_contractor2.php" method="POST">
+            <ul>
+                <li>
+                    <label for="Contractor_ID">Contactor_ID:</label>
+                    <input type="text" name="Contractor_ID" required>
+                </li>
+
+                <li>
+                    <label for="first_name"> First Name:</label>
+                    <input type="text" name="first_name" required>
+                </li>
+
+                <li>
+                    <label for="last_name"> Last Name:</label>
+                    <input type="text" name="last_name" required>
+                </li>
+
+                <li>
+                    <label for="Sector"> Sector:</label>
+                    <input type="text" name="Sector">
+                </li>
+            </ul>
+            <input type="submit" value="Insert Contractor">
+        </form>
+       
+        <!--Create a form to delete contractor by contractor id-->
+        <h4>Delete External contractors by ID</h4>
+        <form action="del_contractor.php" method="POST">
+            <ul>
+                <li>
+                    <label for="Contractor_ID">Contactor_ID:</label>
+                    <input type="text" name="Contractor_ID" required>
+                </li>                
+            </ul>
+            <input type="submit" value="Delete Contractor">
+        </form>
+        <hr>
+
+        <br>
+        <a href="stalphonsus_db.php">Return to Database main page</a>
+    </body>
+</html>

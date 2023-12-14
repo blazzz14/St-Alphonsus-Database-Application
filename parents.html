@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parent Information</title>
+        <!--Set the viewport so the page adjusts according to the device-->
+        <meta name = "viewport" content= "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href="entities.css">
+    </head>
+    <body>
+        <hr>
+        <br>
+        <a href="stalphonsus_db.php">Return to Database main page</a>
+        <h1>Parent/Guardian Information</h1>
+
+        <h2>Search for Parents by attributes</h2>
+        <form action="parents_search3.php" method="POST">
+            <p>
+                <label>Search Guardian ID: <input type="text" name="Guardian_ID" /></label>
+            </p>
+    
+            <p>
+                <label>Search by First Name: <input type="text" name="First_Name" /></label>
+            </p>
+    
+            <p>
+                <label>Search by Last Name: <input type="text" name="Last_Name" /></label>
+            </p>
+
+            <p>
+                <label>Search by Address: <input type="text" name="Address" /></label>
+            </p>
+
+            <p>
+                <label>Search by Phone number: <input type="text" name="Phone_number" /></label>
+            </p>
+
+            <p>
+                <label>Search by Enrolled students: <input type="text" name="Student_ID" /></label>
+            </p>
+            <p>
+                <button type="submit" name="search">Search Parent Records</button>
+            </p>
+        </form>
+
+        <h3>Edit Parent or Guardian Information</h3>
+        <form action="parents_edit2.php" method="POST">
+            <p>
+                <label>Parent/Guardian ID: <input type="text" name="Guardian_ID" required/></label>
+            </p>
+    
+            <p>
+                <label>First Name: <input type="text" name="First_Name" /></label>
+            </p>
+    
+            <p>
+                <label>Last Name: <input type="text" name="Last_Name" /></label>
+            </p>
+
+            <p>
+                <label>Edit Address: <input type="text" name="Address" /></label>
+            </p>
+
+            <p>
+                <label>Edit Phone number: <input type="text" name="Phone_number" /></label>
+            </p>
+
+            <p>
+                <label>Edit linked Enrolled students: <input type="text" name="Student_ID" /></label>
+            </p>
+            <p>
+                <button type="submit" name="search">Submit Changes</button>
+            </p>
+        </form>
+
+        <h4>Insert New Parent or Guardian Information</h4>
+        <form action="insert_parents2.php" method="POST">
+            <p>
+                <label>Insert Guardian ID: <input type="text" name="Guardian_ID" required/></label>
+            </p>
+    
+            <p>
+                <label>First Name: <input type="text" name="First_Name" /></label>
+            </p>
+    
+            <p>
+                <label>Last Name: <input type="text" name="Last_Name" /></label>
+            </p>
+
+            <p>
+                <label>Address: <input type="text" name="Address" /></label>
+            </p>
+
+            <p>
+                <label>Phone number: <input type="text" name="Phone_number" /></label>
+            </p>
+
+            <!--will not input new student information here, can be handled on student table already-->
+            
+            <p>
+                <button type="submit" name="search">Insert Parent Records</button>
+            </p>
+        </form>
+
+        <h5>Delete parent or guardian</h5>
+        <form action="del_parents.php" method="POST">
+            <p>
+                <label>Enter Parent ID: <input type="text" name="Guardian_ID" required/></label>
+            </p>
+
+            <p>
+                <button type="submit" name="search">Delete Parent Records</button>
+            </p>
+        </form>
+    
+        <hr>
+        <br>
+        <a href="stalphonsus_db.php">Return to Database main page</a>
+    </body>
+</html>
+

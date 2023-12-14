@@ -1,0 +1,15 @@
+St Alphonsus Primary School
+Colour: #0E74BC
+
+
+Nav tab consisting of:
+Home/Index	About Us     Curriculum     Staff Login	  
+
+Search Bar: Generic
+
+Welcome to the School etc etc
+
+Events     News     Term Dates
+
+Footer:
+School Information     Staff Links     Department for Education	

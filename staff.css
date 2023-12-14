@@ -1,0 +1,18 @@
+header {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/*Target logo image*/
+.logo-image {
+    width: 100px; 
+    height: 80px;     
+    vertical-align: left; /* Align the image vertically in the middle of the line */
+}
+
+/*Target school moto*/
+.school-moto {
+    font-size: 20px; /* Adjust the font size*/
+    margin-left: 10px; /*Add 10px from the left*/
+    display: inline; /* Display text and image in the same line */
+}

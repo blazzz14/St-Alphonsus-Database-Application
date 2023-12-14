@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>St Alphonsus Primary School</title>            
+        <!--Set the viewport so the page adjusts according to the device-->
+        <meta name = "viewport" content= "width=device-width, initial-scale=1">
+        <!--Add the 2 content delivery network links for Bootstrap-->        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Can still add a Style Sheet-->
+        <link rel = "stylesheet" href="staff.css">        
+    </head>
+
+    <div class="container">
+        <body>  
+            <header>
+                <div class="header-content">
+                    <img src="logo.png" alt = "" class="logo-image">
+                    <p class="school-moto">
+                        St Alphonsus Primary School.
+                        Tomorrow is inside for our future generation.
+                    </p>               
+                </div>        
+            </header>
+            <br>
+            <br>
+           
+            <!--Using Nav element and lists for Business Information-->
+            <nav class="nav d-flex justify-content-center">
+                <a class ="nav-link active" aria-current="page" href="index.html">Home Page</a>
+                <a class="nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-link" href="curriculum.html">Curriculum</a>
+                <a class="nav-link" href="staff.html">Staff Login</a>
+            </nav>
+            <br>
+            
+            <section class="vh-100" style="background-color: #0E74BC;">
+                <div class="container py-5 h-100">
+                  <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                      <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+              
+                        <h3 class="mb-5">Sign in</h3>
+                        <form action="loginedit.php" method="post">
+                            <div class="form-outline mb-4">
+                                <input type="email" id="typeEmailX-2" class="form-control form-control-lg" name="email" />
+                                <label class="form-label" for="typeEmailX-2">Email</label>
+                            </div>
+                        
+                            <div class="form-outline mb-4">
+                                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" name="password" />
+                                <label class="form-label" for="typePasswordX-2">Password</label>
+                            </div>
+                        
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-start mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                                <label class="form-check-label" for="form1Example3"> Remember password </label>
+                            </div>
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+                        </form>
+                        
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+            <div class="container my-5">           
+                <footer class="text-center text-lg-start text-white" style="background-color:#0E74BC;">
+                    <!-- Grid container -->
+                    <div class="container p-4 pb-0">
+                        <!-- Section: Links -->
+                        <section class="">
+                        <!--Grid row-->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                St Alphonsus RC Primary School
+                            </h6>
+                            <p>
+                                St Alphonsus Primary School RC,
+                                Brian Statham Way,
+                                Manchester, M00 000
+                            </p>
+                            </div>
+                            <!-- Grid column -->
+                
+                            <hr class="w-100 clearfix d-md-none" />
+                
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Staff Links</h6>
+                                <p>
+                                    <a class="text-white" href="staff.html">Staff Login</a>
+                                </p>
+                                <p>
+                                    <a class="text-white" href="aboutus.html">About us</a>
+                                </p>
+                                <p>
+                                    <a class="text-white" href="curriculum.html">Curriculum</a>
+                                </p>                        
+                            </div>
+                            <!-- Grid column -->
+                
+                            <hr class="w-100 clearfix d-md-none" />
+                
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none" />
+                
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>                    
+                                <p><i class="fas fa-envelope mr-3"></i> help@stalphonsus.com</p>
+                                <p><i class="fas fa-phone mr-3"></i>01204 123456</p>
+                            </div>
+                            <!-- Grid column -->
+                
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+                    
+                                <!-- Facebook -->
+                                <a
+                                    class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #3b5998"
+                                    href="https://www.facebook.com/"
+                                    role="button"
+                                    ><i class="fab fa-facebook-f"></i
+                                    >
+                                </a>
+                    
+                                <!-- Twitter -->
+                                <a
+                                    class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #55acee"
+                                    href="https://twitter.com/home"
+                                    role="button"
+                                    ><i class="fab fa-twitter"></i
+                                    ></a>        
+                                
+                                <!-- Linkedin -->
+                                <a
+                                    class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #0082ca"
+                                    href="https://www.linkedin.com/feed/"
+                                    role="button"
+                                    ><i class="fab fa-linkedin-in"></i
+                                    >
+                                </a>
+                            
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                        </section>
+                        <!-- Section: Links -->
+                    </div>                
+                
+                    <!-- Copyright -->
+                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                        Web Design by Student L39220273, UA92                
+                        <a class="text-white" href="index.html">© Copyright 2023: St Alphonsus Primary School</a>
+                    </div>
+                    
+                </footer>
+                
+            </div>
+        </body>
+    </div>
+</html>
